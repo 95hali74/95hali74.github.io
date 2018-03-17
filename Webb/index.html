@@ -3,17 +3,40 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
+    <meta name="description" content="[NAMN] är en webbyrå i Lund skapad av studenter från Lunds Universitet. Vi använder Wordpress, Weebly, Bootstrap, Squarespace m.m. för att skapa en modern, responsiv, snabb och stilren hemsida.">
+    <meta name="keywords" content="webb, webbyrå, webbdesign, webbutveckling, lund, lunds universitet, student, htlm, css, javascript, wordpress, weebly, one, squarespace, bootstrap">
+
+    <script type="text/javascript">
+        var elm=document.getElementsByTagName("html")[0];
+        elm.style.display="none";
+        document.addEventListener("DOMContentLoaded",function(event) { elm.style.display="block"; });
+    </script>
 
     <title>Hello, world!</title>
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-    <link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css">
-    <link rel="stylesheet" href="css/main.css">
   </head>
 
   <body data-spy="scroll" data-target=".navbar" data-offset="200">
+
+    <noscript id="deferred-styles">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+      <link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css">
+      <link rel="stylesheet" href="css/main.css">
+    </noscript>
+    <script>
+      var loadDeferredStyles = function() {
+        var addStylesNode = document.getElementById("deferred-styles");
+        var replacement = document.createElement("div");
+        replacement.innerHTML = addStylesNode.textContent;
+        document.body.appendChild(replacement)
+        addStylesNode.parentElement.removeChild(addStylesNode);
+      };
+      var raf = window.requestAnimationFrame || window.mozRequestAnimationFrame ||
+          window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
+      if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
+      else window.addEventListener('load', loadDeferredStyles);
+    </script>
+
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
       <a class="navbar-brand mx-3" href="#Hem">Brand title</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
@@ -22,19 +45,19 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link mx-3 my-3 my-lg-1" href="#Hem"><i class="fas fa-home mx-1"></i> Hem</a>
+            <a class="nav-link mx-3 my-3 my-lg-1" href="#Hem"><i class="fas fa-home mx-1"></i>Hem</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link mx-3 my-3 my-lg-1" href="#Om"><i class="fas fa-users mx-1"></i> Om oss</a>
+            <a class="nav-link mx-3 my-3 my-lg-1" href="#Om"><i class="fas fa-users mx-1"></i>Om oss</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link mx-3 my-3 my-lg-1" href="#Tjänster"><i class="fas fa-boxes mx-1"></i> Våra tjänster</a>
+            <a class="nav-link mx-3 my-3 my-lg-1" href="#Tjänster"><i class="fas fa-boxes mx-1"></i>Våra tjänster</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link mx-3 my-3 my-lg-1" href="#Portfolio"><i class="fas fa-briefcase mx-1"></i> Portfolio</a>
+            <a class="nav-link mx-3 my-3 my-lg-1" href="#Portfolio"><i class="fas fa-briefcase mx-1"></i>Portfolio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link mx-3 my-3 my-lg-1" href="#Kontakt"><i class="far fa-address-book mx-1"></i> Kontakta oss</a>
+            <a class="nav-link mx-3 my-3 my-lg-1" href="#Kontakt"><i class="far fa-address-book mx-1"></i>Kontakta oss</a>
           </li>
         </ul>
       </div>
@@ -66,13 +89,13 @@
             <i class="devicon-android-plain colored mx-1" data-toggle="tooltip" data-placement="bottom" title="Android"></i>
             <i class="devicon-apple-original colored mx-1" data-toggle="tooltip" data-placement="bottom" title="Apple"></i>
           </div>
-          <div class="col-sm-6 mt-lg-5 pt-lg-3">
+          <div class="col-sm-6 mt-sm-5 pt-sm-3">
             <div class="container">
               <div class="row">
                 <div class="col-lg-6 align-items-stretch d-none d-sm-flex" data-aos="fade-up" data-aos-delay="100">
                   <div class="card projects-card mx-auto mb-5" href="#">
                     <div class="zoom">
-                      <img class="card-img-top" src="img/download.svg" alt="Card image cap">
+                      <img class="card-img-top" src="img/DLMC.png" alt="DL Management consulting">
                     </div>
                     <div class="card-body">
                       <h5 class="card-title">DL Management consulting</h5>
@@ -260,7 +283,7 @@
           <div class="col-sm-6 col-lg-4 align-items-stretch d-flex">
             <div class="card projects-card mx-auto mb-5" href="#">
               <div class="zoom">
-                <img class="card-img-top" src="img/download.svg" alt="Card image cap">
+                <img class="card-img-top" src="img/DLMC.png" alt="DL Management consulting">
               </div>
               <div class="card-body">
                 <h5 class="card-title">DL Management consulting</h5>

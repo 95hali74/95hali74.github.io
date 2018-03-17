@@ -60,3 +60,7 @@ a {
     max-width: none;
   }
 }
+
+body {
+  opacity: 1 !important;
+}
