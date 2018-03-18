@@ -5,11 +5,26 @@ hr {
 }
 
 .navImg {
-    height: 50px;
+    height: 90px;
 }
 
+@media (max-width:700px) {
+    .navImg {
+        height: 70px;
+    }
+}
+
+
+
 .nav-item {
-    padding-right: 50px;
+    padding-right: 80px;
+}
+
+
+@media (max-width:1500px) {
+.nav-item {
+    padding-right: 60px;
+}
 }
 
 .navbar-brand {
@@ -21,55 +36,71 @@ hr {
     background-color: rgba(245, 245, 245, 1);
     
 }
+@media (min-width:1500px) {
+.mainmenu a {
+    font-size: 18px;
+}
+}
 
+@media (max-width:1500px) {
+.mainmenu a {
+    font-size: 16px;
+}
+}
 
 .mainSectionhome {
     background-image: url("img/hem2.jpg");
     box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.3);
   background-position: center center;
-  background-attachment: fixed;
     height: 800px;
+    background-attachment: fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size:cover; 
+}
+
+@media (max-width: 768px) { 
+    .mainSectionhome {
+        background-attachment: scroll;
+        height: 450px;
+    }
 }
 
 .mainSectiontjanster {
-   padding-top: 100px;
+   padding-top: 150px;
     padding-bottom: 100px;
-  background-position: center center;
-  background-attachment: fixed;
     height: 100px;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size:cover; 
+    background-color: white;
 }
 
 .mainSectionref {
-    padding-top: 100px;
+    padding-top: 150px;
     padding-bottom: 100px;
-  background-position: center center;
-  background-attachment: fixed;
-    height: 80px;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size:cover; 
-    background-color: rgba(110, 125, 145, 0.1);
+    height: 80px; 
+    background-color: white;
 }
 
 .mainSectioncontact {
-    padding-top: 100px;
-    padding-bottom: 80px;
-  background-position: center center;
-  background-attachment: fixed;
+    padding-top: 150px;
+    padding-bottom: 0px;
     height: 80px;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size:cover; 
+    background-color: white;
+}
+
+.finishedjobs {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    height: 80px;
+    background-color: white;
+    border-top: 0.1px solid black;
+}
+
+.undergoingjobs {
+    padding-top: 150px;
+    padding-bottom: 0px;
+    height: 80px;
+    background-color: white;
 }
 
 .img {
@@ -80,11 +111,16 @@ hr {
 
 h {
     font-size: 50px;
+    color: black;
 }
 
 h1 {
     text-align: center;
-    font-size: 25px;
+    font-size: 22px;
+    color: black;
+}
+
+h2 {
     color: black;
 }
 
@@ -92,9 +128,19 @@ h3 {
    color: black;
 }
 
-p {
+h6 {
     color: black;
 }
+
+h7 {
+    color: black;
+}
+
+h8 {
+    color:black;
+    font-size: 30px;
+}
+
 
 .rowbot a:hover { 
     text-decoration: none; 
@@ -107,9 +153,9 @@ p {
 .btn {
     background-color: white;
     color:cornflowerblue;
-    border-color: white;
+    border-color: none;
     border-radius: 3px;
-}
+}   
 
 .rowtop {
     padding-bottom: 50px;
@@ -159,9 +205,24 @@ h5 {
     height: 25px;
 }
 
+
+
 .about {
-    padding-top: 100px;
+    padding-top: 150px;
     padding-bottom: 80px;
+    background-color: white;
+}
+
+.reftop {
+    padding-top: 50px;
+    padding-bottom: 30px;
+    background-color: white;
+}
+
+.refbot {
+    padding-top: 0px;
+    padding-bottom: 20px;
+    background-color: white;
 }
 
 .ref {
@@ -172,7 +233,7 @@ h5 {
 .refcolor {
     padding-top: 100px;
     padding-bottom: 80px;
-    background-color: rgba(110, 125, 145, 0.1);
+    background-color: rgb(92, 123, 242);
 }
 
 .textabout {
@@ -181,13 +242,29 @@ h5 {
     padding-right: 50px;
 }
 
+.textcontactmain {
+    text-align: left;
+    padding-bottom: 50px; 
+}
+
 .textcontact {
     text-align: left;
     padding-bottom: 50px;
+    
 }
 
+@media (min-width:992px){
 .dorinel {
     padding-top: 80px;
+    height: 600px;
+}
+}
+
+@media (max-width:992px){
+.dorinel {
+    padding-top: 80px;
+    height: 400px;
+}
 }
 
 .rowtjanster {
@@ -204,25 +281,114 @@ h5 {
     color: #183f5b;
 }
 
+.tjanstermain {
+    background-color: white;
+}
+
 .bulletp {
     color: black;
 }
 
-.refdivpicsleft {
-    padding-bottom: 20px;
-}
  
+@media (min-width:700px) {
+.refdiv {
+    padding-top: 20px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+}
+
+@media (min-width:700px) {
+.refdivright {
+    padding-top: 20px;
+    text-align: left;
+}
+}
+
+@media (min-width:700px) {
+.refdivleft {
+    padding-top: 20px;
+    text-align: right;
+    position: relative;
+}
+}
+
+@media (min-width:700px) {
+.refdivleftbot {
+    padding-top: 65px;
+    padding-right: 35px;
+    text-align: right;
+}
+}
+
+.reftext {
+    position: absolute;
+    top: 45%;
+    left: 0;
+    width: 100%;
+}
+
+@media (min-width:700px) {
+.refdivrightbot {
+    padding-top: 65px;
+    padding-left: 35px;
+    text-align: left;
+}
+}
+@media (max-width:700px) {
+.refdiv {
+    padding-top: 20px;
+}
+}
+
+@media (max-width:700px) {
+.refdivright {
+    padding-top: 20px;
+}
+}
+
+@media (max-width:700px) {
+.refdivleft {
+    padding-top: 20px;
+}
+}
+
+@media (max-width:700px) {
+.refdivrightbot {
+    padding-top: 20px;
+}
+}
+
+@media (max-width:700px) {
+.refdivleftbot {
+    padding-top: 20px;
+}
+}
+
+.imgref {
+    height: 190px;
+    transition: transform .2s;
+}
+
+.imgref:hover {
+    transform: scale(1.1);
+}
+
 #map {
-    height: 450px;
+    height: 300px;
     width: 576px;
 }
 
-
 @media(min-width:220px) and (max-width:700px) {
 #map {
-    height: 400px;
+    height: 300px;
     width: 350px;
 }
+}
+
+.map {
+    display:flex;
+    justify-content: center;
 }
 
 .refdivpicsleftfour {
@@ -240,32 +406,32 @@ h5 {
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
     color: #274b63;
     background-color: white;
-    border-color: white; /*set the color you want here*/
+    border-color: none; /*set the color you want here*/
     transform: scale(1.1);
 }
 
 .btn-secondary {
     color: white;
     background-color: rgba(110, 125, 145, 0.5);;
-    border-color: white; /*set the color you want here*/
+    border-color: none; /*set the color you want here*/
     transition: transform .2s;
 }
 .btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active, .btn-secondary.active, .open>.dropdown-toggle.btn-secondary {
     color: white;
     background-color: rgba(110, 125, 145, 0.5);;
-    border-color: white; /*set the color you want here*/
+    border-color: none; /*set the color you want here*/
     transform: scale(1.1);
 }
 
 /* Style the tab buttons */
 .tablinkone {
-    background-color: white;
+    background-color: rgba(110, 125, 145, 0);
     color: white;
     float: left;
     border: none;
     outline: none;
     cursor: pointer;
-    padding: 14px 16px;
+    padding: 14px 0px;
     font-size: 17px;
     width: 33.3333333%;
     transition: transform .2s;
@@ -278,13 +444,13 @@ h5 {
 }
 
 .tablinktwo {
-    background-color: white;
+    background-color: rgba(110, 125, 145, 0);
     color: white;
     float: left;
     border: none;
     outline: none;
     cursor: pointer;
-    padding: 14px 16px;
+    padding: 0px 0px;
     font-size: 17px;
     width: 25%;
     transition: transform .2s;
@@ -302,13 +468,13 @@ h5 {
 /* Change background color of buttons on hover */
 @media (min-width: 992px) {
 .tablinkone:hover {
-    background-color: white;
+    background-color: rgba(110, 125, 145, 0);
     transform: scale(1.12);
 }
 }
 @media (min-width: 992px) {
 .tablinktwo:hover {
-    background-color: white;
+    background-color: rgba(110, 125, 145, 0);
     transform: scale(1.12);
 }
 }
@@ -323,7 +489,7 @@ h5 {
 }
     
 .imgtjanster {
-    height: 100px;
+    height: 50px;
 }
 
 .tjanstercont {
@@ -332,7 +498,7 @@ h5 {
 
 /* Set default styles for tab content */
 .tabcontent {
-    color: white;
+    color: black;
     display: none;
     padding: 50px;
     text-align: center;
@@ -343,10 +509,314 @@ h5 {
 }
 
 /* Style each tab content individually */ 
-#Interimschef {background-color:white;}
-#Verksamhetskonsult {background-color:white;}
-#Projektledning {background-color:white;}
-#ProduktionoperationalExcellence {background-color:white;}
-#Etableringutomlands {background-color:white;}
-#Bransher {background-color:white;}
-#Uppdragsroller {background-color:white;}
+#Interimschef {background-color:rgba(110, 125, 145, 0);}
+#Verksamhetskonsult {background-color:rgba(110, 125, 145, 0);}
+#Projektledning {background-color:rgba(110, 125, 145, 0);}
+#ProduktionoperationalExcellence {background-color:rgba(110, 125, 145, 0);}
+#Etableringutomlands {background-color:rgba(110, 125, 145, 0);}
+#Bransher {background-color:rgba(110, 125, 145, 0);}
+#Uppdragsroller {background-color:rgba(110, 125, 145, 0);}
+
+@import url(https://fonts.googleapis.com/css?family=Lora|Roboto:400,500);
+
+ body {
+   margin: 0;
+   padding: 0;
+   font-size: 16px;
+   line-height: 1.5;
+   text-rendering: optimizeLegibility;
+   font-variant-ligatures: none;
+   box-sizing: border-box;
+   font-family: 'Roboto', sans-serif;
+   background-color: #fafafa;
+}
+body::before,
+body::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+body * {
+  box-sizing: inherit;
+}
+p, h1 {
+  margin: 0; padding: 0;
+}
+
+ body, .text-light-black {
+   color: rgba(0,0,0,0.6);
+}
+.text-black {
+  color: rgba(0,0,0,0.9);
+}
+.text-muted {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+.ff-serif {
+  font-family: 'Lora', serif;
+}
+
+.font-weight-normal {
+  font-weight: normal;
+}
+.font-weight-medium {
+  font-weight: 500;
+}
+
+ .lts-1px {
+   letter-spacing: 1px;
+}
+.lts-2px {
+  letter-spacing: 2px;
+}
+
+
+.w-full {
+  width: 100%;
+}
+
+.text-center {
+  text-align: center;
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+
+.d-block {
+  display: block;
+}
+.d-inline-block {
+  display: inline-block;
+}
+
+.p-relative {
+  position: relative;
+}
+.p-absolute {
+  position: absolute
+}
+
+
+
+.bg-white {
+  background-color: #fff;
+}
+
+
+
+
+
+
+.small {
+  font-size: 0.75rem;
+}
+.card-heading {
+  font-size: 2.25rem;
+}
+.styled-link {
+  text-decoration: none;
+  outline: none;
+  color: black;
+  transition: all 0.25s ease-in; 
+}
+.styled-link:hover,
+.styled-link:focus,
+.styled-link:active {
+    text-decoration: none;
+  color: #536dfe;
+}
+.shadow-1 {
+  box-shadow: 0 5px 10px 0 rgba(0,0,0,0.15);
+}
+.blue-hover {
+  transition: all 0.25s ease-in;
+  border-bottom: 5px solid transparent;
+    background-color: #f7faff;
+}
+.blue-hover:hover {
+  transform: translateY(-5px);
+
+  border: none;
+  border-bottom: 5px solid #cee0ff;
+}
+
+
+
+
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.float-left {
+  float: left;
+}
+.float-right{
+  float: right;
+}
+
+
+.armaturpic {
+    height: 50px;
+}
+
+
+
+/**Margin and padding utilities*/
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+.ml-auto {
+  margin-left: auto;
+}
+.mr-auto {
+  margin-right: auto;
+}
+.mx-0 {
+  margin-left: 0;
+  margin-right: 0;
+}
+.mx-1 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.mx-2 {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+.mx-3 {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+
+.my-0 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.my-1 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.my-2 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.my-3 {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.mt-0 {
+  margin-top: 0;
+}
+.mt-1 {
+  margin-top: 1rem;
+}
+.mt-2 {
+  margin-top: 2rem;
+}
+.mt-3 {
+  margin-top: 3rem;
+}
+
+.mb-0 {
+  margin-bottom: 0;
+}
+.mb-1 {
+  margin-bottom: 1rem;
+}
+.mb-2 {
+  margin-bottom: 2rem;
+}
+.mb-3 {
+  margin-bottom: 3rem;
+}
+
+.ml-0 {
+  margin-left: 0;
+}
+.ml-1 {
+  margin-left: 1rem;
+}
+.ml-2 {
+  margin-left: 2rem;
+}
+.ml-3 {
+  margin-left: 3rem;
+}
+
+
+
+
+.px-0 {
+  padding-left: 0;
+  padding-right: 0;
+}
+.px-1 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.px-2 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.px-3 {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+
+.py-0 {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.py-1 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.py-2 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.py-3 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.pt-0 {
+  padding-top: 0;
+}
+.pt-1 {
+  padding-top: 1rem;
+}
+.pt-2 {
+  padding-top: 2rem;
+}
+.pt-3 {
+  padding-top: 3rem;
+}
+
+.pb-0 {
+  padding-bottom: 0;
+}
+.pb-1 {
+  padding-bottom: 1rem;
+}
+.pb-2 {
+  padding-bottom: 2rem;
+}
+.pb-3 {
+  padding-bottom: 3rem;
+}
