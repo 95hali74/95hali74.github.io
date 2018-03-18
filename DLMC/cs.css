@@ -233,7 +233,7 @@ h5 {
 .refcolor {
     padding-top: 100px;
     padding-bottom: 80px;
-    background-color: rgb(92, 123, 242);
+    background-color: white;
 }
 
 .textabout {
@@ -544,7 +544,7 @@ p, h1 {
 }
 
  body, .text-light-black {
-   color: rgba(0,0,0,0.6);
+   color: none;
 }
 .text-black {
   color: rgba(0,0,0,0.9);
@@ -667,6 +667,7 @@ p, h1 {
 
 
 .armaturpic {
+    padding-top: 0px;
     height: 50px;
 }
 
