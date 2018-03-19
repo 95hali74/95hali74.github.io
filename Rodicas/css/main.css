@@ -1,0 +1,85 @@
+::selection {
+  background: #a0cdff;
+}
+
+body {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+a {
+  transition: color .2s;
+}
+
+h1, h2, .navbar-brand {
+  font-family: 'Parisienne', cursive !important;
+}
+
+h1 {
+  font-size: 4.5rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+.navbar-brand {
+  font-size: 2rem;
+}
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+  .navbar-brand  {
+    font-size: 1.7rem;
+  }
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  background-color: #A290A6;
+  color: white;
+}
+
+.nav-pills .nav-link {
+  color: #212529;
+}
+
+.nav-pills .nav-link:hover {
+  text-decoration: underline;
+}
+
+#Hem {
+  min-height: 50vh;
+}
+
+#Hem::after {
+  content: "";
+  background-image: url("../img/background.jpeg");
+  background-size: cover;
+  opacity: 0.3;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+#Nyhet, #Naglar{
+  background-color: #A290A6;
+  color: white;
+}
+
+.stars {
+  color: #EFB300;
+  text-shadow: 1px black;
+}
+
+footer {
+  background-color: #A290A6;
+  color: white;
+}
+
+footer a, footer a:hover {
+  color: white;
+}
