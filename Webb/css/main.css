@@ -12,7 +12,8 @@ a {
 
 .card {
   transition: all .5s;
-  max-width: 300px;
+  width: 100%;
+  max-width: 350px;
   cursor: pointer;
   border: none;
   box-shadow: 2px 2px 20px rgba(33,33,33,.2);
@@ -37,7 +38,15 @@ a {
 }
 
 .navbar {
-  box-shadow: 0 0 20px rgba(33,33,33,.2);
+  box-shadow: 0 0 20px rgba(33,33,33,.4);
+  background: #005C97;
+  background: -webkit-linear-gradient(to left, #363795, #005C97);
+  background: linear-gradient(to left, #363795, #005C97);
+}
+
+.navbar-toggler {
+  border: none;
+  outline: none !important;
 }
 
 .form-control:focus {
@@ -46,7 +55,6 @@ a {
 
 .footer {
   box-shadow: inset 0 10px 20px -10px rgba(33,33,33,.2);
-
 }
 
 .modal-content {
@@ -58,5 +66,79 @@ a {
   .container {
     width: 100%;
     max-width: none;
+  }
+}
+
+#Hem .row {
+  min-height: 100vh;
+  z-index: -1;
+}
+
+.particle-network-animation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  background: #005C97;
+  background: -webkit-linear-gradient(to left, #363795, #005C97);
+  background: linear-gradient(to left, #363795, #005C97);
+  z-index: -1;
+}
+
+.glow {
+  z-index: -1;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  background-image: radial-gradient(circle closest-side, rgba(255, 255, 255, 0.025), transparent);
+}
+
+.glow-1 {
+  width: 150vw;
+  height: 150vh;
+  margin-top: -75vh;
+  margin-left: -75vw;
+  animation: glow-1-move 25s linear infinite both;
+}
+
+@keyframes glow-1-move {
+  from {
+    transform: translate(-100%, 100%);
+  }
+  to {
+    transform: translate(100%, -100%);
+  }
+}
+.glow-2 {
+  width: 100vw;
+  height: 100vh;
+  margin-top: -50vh;
+  margin-left: -50vw;
+  animation: glow-2-move 25s linear 8.3333333333s infinite both;
+}
+
+@keyframes glow-2-move {
+  from {
+    transform: translate(-100%, 0%);
+  }
+  to {
+    transform: translate(100%, 100%);
+  }
+}
+.glow-3 {
+  width: 120vw;
+  height: 120vh;
+  margin-top: -60vh;
+  margin-left: -60vw;
+  animation: glow-3-move 25s linear 16.6666666667s infinite both;
+}
+
+@keyframes glow-3-move {
+  from {
+    transform: translate(100%, 100%);
+  }
+  to {
+    transform: translate(0%, -100%);
   }
 }
