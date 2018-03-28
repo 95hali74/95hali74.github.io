@@ -39,9 +39,7 @@ a {
 
 .navbar {
   box-shadow: 0 0 20px rgba(33,33,33,.4);
-  background: #005C97;
-  background: -webkit-linear-gradient(to left, #363795, #005C97);
-  background: linear-gradient(to left, #363795, #005C97);
+  text-shadow: 2px 2px 5px rgba(33,33,33,.5);
 }
 
 .navbar-toggler {
@@ -69,9 +67,16 @@ a {
   }
 }
 
+.particle-network-animation, .navbar {
+  background: #283c86;
+  background: -webkit-linear-gradient(to right, #45a247, #283c86);
+  background: linear-gradient(to right, #45a247, #283c86);
+}
+
 #Hem .row {
   min-height: 100vh;
   z-index: -1;
+  text-shadow: 2px 2px 5px rgba(33,33,33,.5);
 }
 
 .particle-network-animation {
@@ -80,9 +85,6 @@ a {
   left: 0;
   right: 0;
   height: 100vh;
-  background: #005C97;
-  background: -webkit-linear-gradient(to left, #363795, #005C97);
-  background: linear-gradient(to left, #363795, #005C97);
   z-index: -1;
 }
 
