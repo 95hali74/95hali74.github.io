@@ -29,7 +29,7 @@ a {
   transition: all 1s;
 }
 .card:hover .zoom img {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 .profile-pic {
@@ -40,6 +40,7 @@ a {
 .navbar {
   box-shadow: 0 0 20px rgba(33,33,33,.4);
   text-shadow: 2px 2px 5px rgba(33,33,33,.5);
+  background-color: #005c97;
 }
 
 .navbar-toggler {
@@ -67,16 +68,48 @@ a {
   }
 }
 
-.particle-network-animation, .navbar {
-  background: #283c86;
-  background: -webkit-linear-gradient(to right, #45a247, #283c86);
-  background: linear-gradient(to right, #45a247, #283c86);
-}
-
 #Hem .row {
   min-height: 100vh;
   z-index: -1;
   text-shadow: 2px 2px 5px rgba(33,33,33,.5);
+}
+
+#Chatbutton {
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  overflow: hidden;
+  transition: all .2s;
+  box-shadow: 0 0 20px rgba(33,33,33,.4);
+}
+
+#Closechat {
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.chat-shrink-hover:hover {
+  box-shadow: 2px 2px 25px rgba(33,33,33,.5);
+  transform: scale(1.1);
+}
+
+.chat-icon {
+  font-size: 2rem;
+}
+
+.chat-expand {
+  border-radius: 1%;
+  width: 300px;
+  height: 400px;
+  background-color: white;
+}
+
+.chat-shrink {
+  width: 80px;
+  height: 80px;
+  color: white;
+  border-radius: 100%;
+  background-color: #00CAA0;
 }
 
 .particle-network-animation {
@@ -86,6 +119,7 @@ a {
   right: 0;
   height: 100vh;
   z-index: -1;
+  background-image: linear-gradient(to left top, #005c97, #0083b3, #00a8b4, #00c99f, #90e581);
 }
 
 .glow {

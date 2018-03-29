@@ -22,6 +22,38 @@ $(".card").click(function() {
   return false;
 });
 
+$("#Chatbutton").find(".chat-content").hide();
+$("#Chatbutton").find(".chat-content").removeClass('d-none');
+
+var expanded = false;
+
+$("#Closechat").click(function(e) {
+  $("#Chatbutton").toggleClass('chat-shrink');
+  $("#Chatbutton").toggleClass('chat-shrink-hover');
+  $("#Chatbutton").toggleClass('chat-expand');
+  $("#Chatbutton").css({ 'cursor' : 'pointer' });
+
+  $("#Chatbutton").find(".chat-content").hide();
+
+  $("#Chatbutton").find(".chat-icon").fadeIn(200);
+  expanded = false;
+  e.stopPropagation();
+});
+
+$("#Chatbutton").click(function() {
+  if (expanded == false) {
+    $("#Chatbutton").toggleClass('chat-shrink');
+    $("#Chatbutton").toggleClass('chat-shrink-hover');
+    $("#Chatbutton").toggleClass('chat-expand');
+    $("#Chatbutton").css({ 'cursor' : 'auto' });
+
+    $("#Chatbutton").find(".chat-icon").hide();
+
+    $("#Chatbutton").find(".chat-content").fadeIn(200);
+    expanded = true;
+  }
+});
+
 $("#form").submit(function(e) {
   e.preventDefault();
   $("#submit").attr("disabled", true);
@@ -138,8 +170,8 @@ $(window).on('scroll', function() {
       velocity: 1, // the higher the faster
       density: 10000, // the lower the denser
       netLineDistance: 200,
-      netLineColor: '#929292',
-      particleColors: ['#aaa'] // ['#6D4E5C', '#aaa', '#FFC458' ]
+      netLineColor: '#f7f7f7',
+      particleColors: ['#f7f7f7'] // ['#6D4E5C', '#aaa', '#FFC458' ]
     };
     this.canvas = parent.canvas;
     this.ctx = parent.ctx;
