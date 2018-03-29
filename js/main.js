@@ -77,6 +77,29 @@ $("#form").submit(function(e) {
   });
 });
 
+$("#chatform").submit(function(e) {
+  e.preventDefault();
+  $("#chatsubmit").attr("disabled", true);
+  $("#chatsubmit")
+  .find('[data-fa-i2svg]')
+  .toggleClass('fa-paper-plane')
+  .toggleClass('fa-circle-notch fa-spin');
+  $.ajax({
+    type: "GET",
+    url: 'https://script.google.com/macros/s/AKfycbzJH3aI9X3yTKYEm_ILLVwXkfQ4S32rvdrYRXZ7pnRyHzaKMYoN/exec',
+    data: $("#chatform").serialize(),
+    success: function(data)
+    {
+      $('#success').modal('toggle');
+      $("#chatform :input").attr("disabled", true);
+      $("#chatsubmit")
+      .find('[data-fa-i2svg]')
+      .toggleClass('fa-paper-plane')
+      .toggleClass('fa-circle-notch fa-spin');
+    }
+  });
+});
+
 var divs = $('.particle-network-animation'),
 limit = $(window).height() * 1.5;
 
