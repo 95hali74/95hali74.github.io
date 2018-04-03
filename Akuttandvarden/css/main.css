@@ -113,6 +113,32 @@ table th, table td {
   background-color: #da2727;
 }
 
+#logos {
+  background-image: linear-gradient(to bottom, #eff6f8, #f1f7f9, #f4f7f9, #f6f8fa, #f8f9fa);
+}
+
+#Hem::after {
+  content: "";
+  background-image: url("../img/bg-hero.jpg");
+  background-size: cover;
+  opacity: 0.8;
+  top: 100px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+@media (min-width: 992px) {
+  #Hem .jumbotron {
+    background-image: url("../img/smile.jpg");
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+  }
+}
+
 #Chatbutton {
   position: fixed;
   bottom: 0px;
@@ -120,7 +146,7 @@ table th, table td {
   overflow: hidden;
   transition: all .2s;
   box-shadow: 0 0 20px rgba(33,33,33,.4);
-  z-index: 100;
+  z-index: 10000;
 }
 
 #Closechat {
