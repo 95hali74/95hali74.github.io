@@ -8,7 +8,7 @@ $(function () {
 
 $('.nav-button').click(function(e) {
   $('#tablist a[href="' + e.target.attributes.href.value + '"]').tab('show');
-  AOS.refreshHard();
+  
 });
 
 $("#Chatbutton").find(".chat-content").hide();
