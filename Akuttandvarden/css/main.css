@@ -16,7 +16,7 @@ footer {
   color: white;
 }
 
-footer a, footer a:hover {
+footer a, footer a:hover, .badge a, .badge a:hover {
   color: white;
 }
 
@@ -94,7 +94,7 @@ table th, table td {
   color: #da2727 !important;
 }
 
-.card {
+#Hem .card, #Kontakt .card {
   background-color: #da2727;
   border: none;
   border-radius: 1rem;
@@ -117,8 +117,27 @@ table th, table td {
   background-color: white;
 }
 
+#accordion .btn {
+  box-shadow: none;
+  white-space: inherit;
+  text-align: left;
+}
+
+#accordion h5 {
+  margin: 0;
+}
+
+#accordion .btn-link {
+  color: inherit;
+}
+
+#accordion .card {
+  width: 100%;
+}
+
 #logos {
   background-color: transparent !important;
+  min-height: 100vh;
 }
 
 #logos::after {

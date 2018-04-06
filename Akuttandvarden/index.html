@@ -18,24 +18,11 @@
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,900,900i">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,700,900">
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-  <section id="logos" class="pt-3 bg-light">
-    <div class="container-fluid">
-      <div class="row justify-content-around text-center">
-        <div class="col-6 d-none d-sm-block my-auto">
-          <img src="img/logo.png" class="img-fluid my-3" alt="Akuttandvården Stockholm logo"/>
-        </div>
-        <div class="col-8 col-sm-6 my-auto">
-          <a href="http://novodental.se/"><img src="img/novo.png" class="img-fluid my-3" alt="Novo Dental logo"/></a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light border-bottom">
+  <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light border-bottom" data-aos="fade-down">
     <span class="d-block d-lg-none">
       <img src="img/logo-no-text.png" class="img-fluid" style="max-height: 35px;"/>
       <a class="navbar-brand" href="#Top">Akuttandvården</a>
@@ -70,21 +57,34 @@
     </div>
   </nav>
 
-  <div class="tab-content">
-    <section id="Hem" class="tab-pane show active my-5" role="tabpanel">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <div class="jumbotron" data-aos="slide-up">
-              <h1 class="display-1">Akut tandvård i Stockholm</h1>
-              <p class="lead font-weight-bold">Få hjälp idag! Ring 08-659 45 00</p>
-              <button class="btn btn-primary btn-lg nav-button" href="#Kontakt">BOKA TID</button>
-            </div>
+  <section id="logos" class="pt-3 bg-light border-bottom">
+    <div class="container-fluid mt-5">
+      <div class="row justify-content-around text-center">
+        <div class="col-6 d-none d-sm-block my-auto">
+          <img src="img/logo.png" class="img-fluid my-3" alt="Akuttandvården Stockholm logo" data-aos="fade-down"/>
+        </div>
+        <div class="col-12 col-sm-6 my-auto">
+          <a href="http://novodental.se/"><img src="img/novo.png" class="img-fluid my-3" alt="Novo Dental logo" data-aos="fade-down"/></a>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-8 col-xl-6">
+          <div class="jumbotron" data-aos="fade-up">
+            <h1 class="display-1">Akut tandvård i Stockholm</h1>
+            <p class="lead font-weight-bold">Få hjälp idag! Ring 08-659 45 00</p>
+            <button class="btn btn-primary btn-lg nav-button" href="#Kontakt">BOKA TID</button>
           </div>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="tab-content">
+    <section id="Hem" class="tab-pane show active py-5" role="tabpanel">
+      <div class="container">
         <div class="row my-5">
           <div class="col-md-4 my-3 align-items-stretch d-flex">
-            <div class="card mx-auto text-center" data-aos="slide-up" data-aos-delay="100">
+            <div class="card mx-auto text-center" data-aos="fade-up" data-aos-delay="0">
               <img class="card-img-top card-logo mx-auto mt-3" src="img/boka.png" alt="Boka tid ikon">
               <div class="card-body">
                 <h3 class="card-title">BOKA TID</h3>
@@ -94,7 +94,7 @@
             </div>
           </div>
           <div class="col-md-4 my-3 align-items-stretch d-flex">
-            <div class="card mx-auto text-center" data-aos="slide-up" data-aos-delay="200">
+            <div class="card mx-auto text-center" data-aos="fade-up" data-aos-delay="100">
               <img class="card-img-top card-logo mx-auto mt-3" src="img/oppentider.png" alt="Boka tid ikon">
               <div class="card-body">
                 <h3 class="card-title">ÖPPENTIDER</h3>
@@ -111,7 +111,7 @@
             </div>
           </div>
           <div class="col-md-4 my-3 align-items-stretch d-flex">
-            <div class="card mx-auto text-center" data-aos="slide-up" data-aos-delay="300">
+            <div class="card mx-auto text-center" data-aos="fade-up" data-aos-delay="200">
               <img class="card-img-top card-logo mx-auto mt-3" src="img/hitta-hit.png" alt="Boka tid ikon">
               <div class="card-body">
                 <h3 class="card-title">HITTA HIT</h3>
@@ -120,36 +120,39 @@
             </div>
           </div>
         </div>
-        <div class="row my-5" style="background-color: white;">
+        <div class="row my-5">
           <div class="col-lg-10 mx-auto text-center">
-            <h2 class="mt-5">Erfarna akuttandläkare i Stockholm</h2>
-            <p class="font-weight-bold">Har du akut tandvärk, problem med visdomständer, skadad tand, utslagen tand eller andra akuta problem?</p>
-            <p>Kontakta oss på Akuttandvården Stockholm/Novo Dental så hjälper vi dig som är i behov av akut tandvård.</p>
-            <p class="mb-5">
+            <h2 class="mt-5" data-aos="fade-up">Erfarna akuttandläkare i Stockholm</h2>
+            <p class="font-weight-bold" data-aos="fade-up">Har du akut tandvärk, problem med visdomständer, skadad tand, utslagen tand eller andra akuta problem?</p>
+            <p data-aos="fade-up">Kontakta oss på Akuttandvården Stockholm/Novo Dental så hjälper vi dig som är i behov av akut tandvård.</p>
+            <p class="mb-5" data-aos="fade-up">
               Vi har flera års erfarenhet av akut tandvård. När olyckan är framme och du drabbas av akuta tandproblem är det viktigt att du kan få rätt hjälp så snabbt som möjligt. Oavsett vilken typ av besvär du har så ska du inte behöva vänta på hjälp. Därför erbjuder vi på Akuttandvården Stockholm akut tandvård med generösa öppettider. Vi gör alltid vårt bästa för att ordna en tid så fort som möjligt. På vår fräscha och behagliga klinik får du hjälp av erfarna akut tandläkare och tandsköterskor. Vår klinik är modernt utrustad och vi arbetar alltid med den senaste tekniken. Vårt mål är att du som patient ska få den absolut bästa hjälpen på snabbast möjliga vis.
             </p>
-            <span class="badge badge-list my-1">Experter på akut tandvård</span>
-            <span class="badge badge-list my-1">Snabbt omhändertagande</span>
-            <span class="badge badge-list my-1">Akuttider alla dagar</span>
-            <span class="badge badge-list my-1">Toppmodern klinik</span>
-            <span class="badge badge-list my-1">Lång erfarenhet</span>
-            <h3 class="mt-5">Ring och få hjälp idag! 08-659 45 00</h3>
+            <span class="badge badge-list my-1" data-aos="fade-in" data-aos-delay="0">Experter på akut tandvård</span>
+            <span class="badge badge-list my-1" data-aos="fade-in" data-aos-delay="100">Snabbt omhändertagande</span>
+            <span class="badge badge-list my-1" data-aos="fade-in" data-aos-delay="200">Akuttider alla dagar</span>
+            <span class="badge badge-list my-1" data-aos="fade-in" data-aos-delay="300">Toppmodern klinik</span>
+            <span class="badge badge-list my-1" data-aos="fade-in" data-aos-delay="400">Lång erfarenhet</span>
+            <h3 class="mt-5" data-aos="zoom-in">Ring och få hjälp idag! 08-659 45 00</h3>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="Behandlingar" class="tab-pane my-5" role="tabpanel">
+    <section id="Behandlingar" class="tab-pane py-5" role="tabpanel">
       <div class="container">
         <div class="row">
           <div class="col-12">
             <h1>Våra behandlingar</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+            </p>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="Tandvark" class="tab-pane my-5" role="tabpanel">
+    <section id="Tandvark" class="tab-pane py-5" role="tabpanel">
       <div class="container">
         <div class="row">
           <div class="col-12">
@@ -169,46 +172,180 @@
               Vissa av dessa fall leder till en lindrigare form av tandvärk medans andra fall
               kan leda till kraftigare tandvärk.
             </p>
-            <div id="accordion" style="display: none">
+            <div id="accordion">
               <div class="card">
-                <div class="card-header" id="headingOne">
+                <div class="card-header">
                   <h5 class="mb-0">
-                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                      Collapsible Group Item #1
+                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapse1">
+                      <h5>Hög fyllning/<wbr>lagning eller krona</h5>
                     </button>
                   </h5>
                 </div>
-                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                <div id="collapse1" class="collapse" data-parent="#accordion">
                   <div class="card-body">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                    <p>
+                      Tanden belastas för hårt vid tuggning vilket kan leda till tandvärk. Lagningen putsas ner vilket leder till att besvären oftast avtar inom några dagar.
+                    </p>
                   </div>
                 </div>
               </div>
               <div class="card">
-                <div class="card-header" id="headingTwo">
+                <div class="card-header">
                   <h5 class="mb-0">
-                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                      Collapsible Group Item #2
+                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapse2">
+                      <h5>Djup/pulpanära fyllning/<wbr>lagning</h5>
                     </button>
                   </h5>
                 </div>
-                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                <div id="collapse2" class="collapse" data-parent="#accordion">
                   <div class="card-body">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                    <p>
+                      Kan leda till inflammation i pulpan vilket ibland kan gå över men som ibland även kan leda till tandvärk och därefter rotfyllning.
+                    </p>
                   </div>
                 </div>
               </div>
               <div class="card">
-                <div class="card-header" id="headingThree">
+                <div class="card-header">
                   <h5 class="mb-0">
-                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                      Collapsible Group Item #3
+                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapse3">
+                      <h5>Djupa kariesangrepp</h5>
                     </button>
                   </h5>
                 </div>
-                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                <div id="collapse3" class="collapse" data-parent="#accordion">
                   <div class="card-body">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                    <p>
+                      Leder ofta till pulpit och kraftig tandvärk. Tanden behöver ofta rotfyllas.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapse4">
+                      <h5>Inflammationer och/<wbr>eller infektioner i käkbenet</h5>
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapse4" class="collapse" data-parent="#accordion">
+                  <div class="card-body">
+                    <p>
+                      Ofta beroende på att en tand gått i nekros (dött) och blivit infekterad. Gör inte alltid ont men kan akutisera och leder då ofta till kraftig tandvärk. Tanden behöver rotfyllas eller i vissa fall tas bort.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapse5">
+                      <h5>Tandlossning/<wbr>parodontit</h5>
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapse5" class="collapse" data-parent="#accordion">
+                  <div class="card-body">
+                    <p>
+                      Ju tidigare man upptäcker och behandlar parodontit desto mindre risk för tandvärk. Patientens egenvård är av yttersta vikt.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapse6">
+                      <h5>Visdomständer</h5>
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapse6" class="collapse" data-parent="#accordion">
+                  <div class="card-body">
+                    <p>
+                      Får inte altid plats i käkbenet och kan växa lite snett. Alla visdomständer är olika och kan ställa till med besvär på lite olika sätt. Ofta kan de orsaka en tandköttsficka där det är mycket svårt att hålla rent. Man får då en inflammation i mjukvävnaden runt visdomstanden. även kallad pericoronit. Detta kan vara mycket smärtsamt då det gör ont vid tuggning pga mjukvävnaden blivit så svullen. Det kan även vara svårt att gapa pga smärta. Man kan bli svullen och även få djupare infektioner och behöver då antibiotika. Vid upprepade besvär med visdomständer rekommenderas avlägnsnande. Ibland är det väldigt tydligt både på röntgen samt i munnen att visdomstanden kommer att ställa till med besvär och då rekommenderas att man tar bort den.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapse7">
+                      <h5>Trasig fyllning/<wbr>lagning</h5>
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapse7" class="collapse" data-parent="#accordion">
+                  <div class="card-body">
+                    <p>
+                      Leder till att olika stimuli som värme och kyla kommer in i tanden och orsakar tandvärk. Ofta kan det även kännas väldigt vasst mot tungan. Fyllningen avlägsnas och ersätt men en ny.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapse8">
+                      <h5>Spricka</h5>
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapse8" class="collapse" data-parent="#accordion">
+                  <div class="card-body">
+                    <p>
+                      Kan vara mycket svårt att diagnostisera då det sällan syns på röntgen. Befintliga lagningar måste tas bort för inspektion. Om sprickan går långt/djupt ner i tanden behöver man ibland rotfylla tanden för att bli av med tandvärken. Går dock sprickan väldigt djupt ner i tanden och ner i rotkanalerna så är prognosen för en rotfyllning dålig och då tar man istället bort tanden. Ofta är detta tyvärr det enda sättet att bli av med tandvärken i en tand med väldigt djupa sprickor. Tyvärr är detta inte alltför ovanligt på kindtänder med stora amalgamlagningar.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapse9">
+                      <h5>Trauma</h5>
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapse9" class="collapse" data-parent="#accordion">
+                  <div class="card-body">
+                    <p>
+                      Kan bero på en mängd olika saker. Att man tex bitit på något hårt eller ramlat och fått en smäll på tanden. Om tanden går sönder så att pulpan blottas får man förr eller senare tandvärk och behöver då rotfylla tanden. Ibland kan tanden frakturera långt ner i roten och då får tanden oftast tas bort. Lyckligtvis klarar sig många tänder efter ett trauma men det är viktigt att komma ihåg att en trauamskadad tand som är symtomfri kan ge upphov till besvär och tandvärk vid långt senare tillfälle. Det är därför viktigt att kontrollera tanden/tänderna regelbundet, i synnerhet efter ett trauma.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapse10">
+                      <h5>Tandgnissling/<wbr>tandpressning</h5>
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapse10" class="collapse" data-parent="#accordion">
+                  <div class="card-body">
+                    <p>
+                      Kan leda till tandvärk. Ofta sker detta i perioder med mycket stress beroende på aktuell livssituation. Man sover ofta sämre och kan vakna med ömma tänder, kinder och spänningshuvudvärk. Tandslitage kan även leda till att man biter sönder sina tänder vilket självklart kan leda till tandvärk. Olika typer av avslappningsövningar eller "käkgymnastik" kan ibland hjälpa men eftersom man ofta pressar eller gnisslar tänder undermedvetet och framförallt nattetid är det bra att ha en bettskena som man sover med på natten. En bettskena är en bra investering då den hjälper till att avlasta käkleder, skyddar tänderna från onödigt slitage och får tuggmusklerna att slappna av. Överkäkens och underkäkens tänder skall egentligen endast ha kontakt då man tuggar.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapse11">
+                      <h5>Protes eller bettskena som felbelastar tänder</h5>
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapse11" class="collapse" data-parent="#accordion">
+                  <div class="card-body">
+                    <p>
+                      Innebär att vissa tänder får ta emot mer belastning än andra vilket kan leda till ömhet och tandvärk. Tag med protesen eller bettskenan till tandläkaren så kan man ofta väldigt enkelt slipa in så det stämmet med ditt bett. Besvären bör sedan avta inom en till två veckor. Ha alltid för vana att ta med din bettskena eller protes till din tandläkare då du har tid för undersökning.
+                    </p>
                   </div>
                 </div>
               </div>
@@ -218,7 +355,7 @@
       </div>
     </section>
 
-    <section id="Soka" class="tab-pane my-5" role="tabpanel">
+    <section id="Soka" class="tab-pane py-5" role="tabpanel">
       <div class="container">
         <div class="row">
           <div class="col-12">
@@ -258,7 +395,7 @@
       </div>
     </section>
 
-    <section id="Akut" class="tab-pane my-5" role="tabpanel">
+    <section id="Akut" class="tab-pane py-5" role="tabpanel">
       <div class="container">
         <div class="row">
           <div class="col-12">
@@ -310,7 +447,7 @@
       </div>
     </section>
 
-    <section id="Konstnad" class="tab-pane my-5" role="tabpanel">
+    <section id="Konstnad" class="tab-pane py-5" role="tabpanel">
       <div class="container">
         <div class="row">
           <div class="col-12">
@@ -344,7 +481,7 @@
       </div>
     </section>
 
-    <section id="Kontakt" class="tab-pane my-5" role="tabpanel">
+    <section id="Kontakt" class="tab-pane py-5" role="tabpanel">
       <div class="container">
         <div class="row">
           <div class="col-12">
@@ -355,15 +492,23 @@
             <p>
               Vi erbjuder ej drop-in.
             </p>
-            <h3 class="text-center my-5">Akuttandvården Stockholm i samarbete med Novo Dental</h3>
-            <h3>Hitta hit</h3>
+            <h3 class="mt-5">Boka tid</h3>
+            <p class="font-weight-bold">
+              <i class="far fa-envelope fw-icon"></i>Med epost: <span class="badge badge-list my-1" data-aos="fade-in" data-aos-delay="0"><a href="mailto:info@novodental.se">info@novodental.se</a></span><br>
+              <i class="fas fa-phone fw-icon"></i> Med tel: <span class="badge badge-list my-1" data-aos="fade-in" data-aos-delay="100">08-659 45 00</span>
+            </p>
+            <h3 class="mt-5">Hitta hit</h3>
+            <p class="font-weight-bold">
+              Landsvägen 79, 172 65 Sundbyberg
+            </p>
             <p>
               Precis vid tvärbanan, hållplats Bällsta bro.
             </p>
-            <div class="card mx-auto text-center" style="width: 100%">
+            <div class="card mx-auto my-5 text-center" style="width: 100%">
               <iframe height="500" frameborder="0" style="border:0"
               src="https://www.google.com/maps/embed/v1/place?q=Novo+Dental&key=AIzaSyDInN8oKgwJu8uzLNnoFm1O6dYovhLlgHg" allowfullscreen></iframe>
             </div>
+            <h3 class="text-center my-5">Akuttandvården Stockholm i samarbete med Novo Dental</h3>
           </div>
         </div>
       </div>
@@ -433,11 +578,11 @@
               </tr>
               <tr>
                 <td><i class="far fa-envelope fw-icon"></i>Epost:</td>
-                <th><a href="mailto:info@novodental.se">info@novodental.se</a><br></th>
+                <th><a href="mailto:info@novodental.se">info@novodental.se</a></th>
               </tr>
               <tr>
                 <td><i class="fab fa-facebook-square fw-icon"></i>FB:</td>
-                <th><a href="https://www.facebook.com/akuttandvardenstockholm">@akuttandvarden<wbr>stockholm</a><br></th>
+                <th><a href="https://www.facebook.com/akuttandvardenstockholm">@akuttandvarden<wbr>stockholm</a></th>
               </tr>
               <tr>
                 <td><i class="fas fa-phone fw-icon"></i>Tel:</td>

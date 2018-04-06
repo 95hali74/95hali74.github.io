@@ -8,7 +8,16 @@ $(function () {
 
 $('.nav-button').click(function(e) {
   $('#tablist a[href="' + e.target.attributes.href.value + '"]').tab('show');
-  
+});
+
+$(".navbar").on('click', 'a[href^="#"]', function (event) {
+  event.preventDefault();
+
+  $(".navbar-collapse").collapse('hide');
+
+  $('html, body').animate({
+      scrollTop: $(window).height() - 50
+  }, 500);
 });
 
 $("#Chatbutton").find(".chat-content").hide();
