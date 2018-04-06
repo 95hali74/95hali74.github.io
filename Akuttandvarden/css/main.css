@@ -82,17 +82,24 @@ table th, table td {
   display: none;
 }
 
-.nav-link.active{
-  color: #da2727 !important;
-}
-
 .nav-link {
   color: #575a5d;
-  transition: color .2s;
+  transition: all .2s;
 }
 
-.nav-link:hover {
+.nav-link:hover, .nav-link.active  {
   color: #da2727 !important;
+  transform: translateX(5px);
+}
+
+.nav-icon {
+  opacity: 0;
+  color: #da2727 !important;
+  transition: all .2s;
+}
+
+.nav-link:hover > .nav-icon, .nav-link.active > .nav-icon {
+  opacity: 1;
 }
 
 #Hem .card, #Kontakt .card {
