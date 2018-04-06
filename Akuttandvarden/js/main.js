@@ -8,6 +8,10 @@ $(function () {
 
 $('.nav-button').click(function(e) {
   $('#tablist a[href="' + e.target.attributes.href.value + '"]').tab('show');
+  
+  $('html, body').animate({
+      scrollTop: $(window).height() - 50
+  }, 500);
 });
 
 $(".navbar").on('click', 'a[href^="#"]', function (event) {
