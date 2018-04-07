@@ -42,7 +42,7 @@ $("#Closechat").click(function(e) {
   e.stopPropagation();
 });
 
-$("#Chatbutton").click(function() {
+$("#Chatbutton, #OpenChat").click(function() {
   if (expanded == false) {
     $("#Chatbutton").toggleClass('chat-shrink');
     $("#Chatbutton").toggleClass('chat-shrink-hover');

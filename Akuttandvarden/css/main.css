@@ -88,12 +88,13 @@ table th, table td {
 
 .nav-link {
   color: #575a5d;
+  padding-right: 0 !important;
   transition: all .2s;
 }
 
 .nav-link:hover, .nav-link.active  {
   color: #da2727 !important;
-  transform: translateX(5px);
+  transform: translateX(7px);
 }
 
 .nav-icon {
