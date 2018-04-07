@@ -2,6 +2,10 @@
   background: #a0cdff;
 }
 
+a.link {
+    color: brown;
+  transition: color .2s;
+}
 a {
     color: white;
   transition: color .2s;
@@ -54,7 +58,7 @@ a {
 }
 
 .navbar-brand {
-    font-size: 30px;!important 
+    font-size: 40px;!important 
 }
 
 .navbar-toggler {
@@ -123,7 +127,7 @@ a {
   height: 80px;
   color: white;
   border-radius: 100%;
-  background-color: #6c5499;
+  background-color: brown;
 }
 
 .chat-content {
