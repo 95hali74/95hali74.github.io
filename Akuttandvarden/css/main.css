@@ -107,19 +107,23 @@ table th, table td {
   opacity: 1;
 }
 
-#Hem .card, #Kontakt .card {
+#Hem .card {
   background-color: #da2727;
-  border: none;
-  border-radius: 1rem;
-  color: white;
   width: 25rem;
-  box-shadow: 5px 5px 25px rgba(33,33,33,.3);
-  transition: all .5s;
+  color: white;
 }
 
-#Hem .card:hover {
+.card {
+  border: none;
+  border-radius: 1rem;
+  box-shadow: 5px 5px 25px rgba(33,33,33,.3);
+  transition: all .5s !important;
+  overflow: hidden;
+}
+
+.card:hover {
   box-shadow: 2px 2px 25px rgba(33,33,33,.9);
-  transform: translateY(-10px);
+  transform: translateY(-10px) !important;
 }
 
 .card-logo {
@@ -161,7 +165,7 @@ table th, table td {
 
 #logos::after {
   content: "";
-  background-image: url("../img/bg-hero3.jpg");
+  background-image: url("../img/bg-hero.jpg");
   background-size: cover;
   background-position: center;
   opacity: 0.5;
@@ -198,7 +202,7 @@ table th, table td {
 }
 
 .chat-expand {
-  border-radius: 1%;
+  border-radius: 0.5rem;
   width: 300px;
   height: 570px;
   background-color: white;
