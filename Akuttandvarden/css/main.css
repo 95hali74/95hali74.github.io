@@ -113,7 +113,7 @@ table th, table td {
   color: white;
 }
 
-.card {
+.card-effect {
   border: none;
   border-radius: 1rem;
   box-shadow: 5px 5px 25px rgba(33,33,33,.3);
@@ -121,7 +121,7 @@ table th, table td {
   overflow: hidden;
 }
 
-.card:hover {
+.card-effect:hover {
   box-shadow: 2px 2px 25px rgba(33,33,33,.9);
   transform: translateY(-10px) !important;
 }
