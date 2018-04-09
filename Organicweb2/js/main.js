@@ -420,3 +420,16 @@ $(window).on('scroll', function() {
   pna = new ParticleNetworkAnimation();	pna.init($('.particle-network-animation')[0]);
 
 }());
+
+$(document).ready(function(){
+  $(window).scroll(function(){
+  	var scroll = $(window).scrollTop();
+	  if (scroll > 300) {
+	    $(".navbar").css("background-color" , "blue");
+	  }
+
+	  else{
+		  $(".navbar").css("background-color" , "#333");  	
+	  }
+  })
+})
