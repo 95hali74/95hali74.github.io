@@ -11,6 +11,8 @@ a {
   transition: color .2s;
 }
 
+
+
 .title-text i {
   font-size: 20px;
 }
@@ -220,17 +222,26 @@ a {
     z-index: -100;
 }
 
+.maintext {
+    padding-top: 15vh;
+    position: fixed;
+	top: 2em;
+  z-index: -99;
+  width: 40%;
+    left: 8%;
+    color: white;
+}
 
 .item-1, 
 .item-2, 
 .item-3 {
-    padding-top: 40vh;
+    padding-top: 55vh;
 	position: fixed;
   display: block;
 	top: 2em;
   z-index: -99;
-  width: 50%;
-  
+  width: 65%;
+  padding-left: 50vh;
   font-size: 2em;
 
 	animation-duration: 20s;
@@ -251,19 +262,19 @@ a {
 }
 
 @keyframes anim-1 {
-	0%, 8.3% { left: -100%; opacity: 0; }
+	0%, 8.3% { left: 50%; opacity: 0; }
   8.3%,25% { left: 25%; opacity: 1; }
   33.33%, 100% { left: 110%; opacity: 0; }
 }
 
 @keyframes anim-2 {
-	0%, 33.33% { left: -100%; opacity: 0; }
+	0%, 33.33% { left: 50%; opacity: 0; }
   41.63%, 58.29% { left: 25%; opacity: 1; }
   66.66%, 100% { left: 110%; opacity: 0; }
 }
 
 @keyframes anim-3 {
-	0%, 66.66% { left: -100%; opacity: 0; }
+	0%, 66.66% { left: 50%; opacity: 0; }
   74.96%, 91.62% { left: 25%; opacity: 1; }
   100% { left: 110%; opacity: 0; }
 }
