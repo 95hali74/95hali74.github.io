@@ -20,6 +20,10 @@ footer {
   color: white;
 }
 
+footer td {
+  width: 115px;
+}
+
 a, a:hover {
   color: inherit;
   font-size: inherit;
@@ -37,6 +41,10 @@ table th, table td {
 }
 
 .btn-primary:hover, .btn-primary:active {
+  background-color: #B3000C !important;
+}
+
+.btn-primary:disabled {
   background-color: #B3000C !important;
 }
 

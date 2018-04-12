@@ -122,7 +122,7 @@
         </div>
         <div class="row my-5">
           <div class="col-lg-10 mx-auto text-center">
-            <h2 class="mt-5" data-aos="fade-up">Erfarna akuttandläkare i Stockholm</h2>
+            <h2 class="mt-5" data-aos="fade-up">Erfarna akut<wbr>tandläkare i Stockholm</h2>
             <p class="font-weight-bold" data-aos="fade-up">Har du akut tandvärk, problem med visdomständer, skadad tand, utslagen tand eller andra akuta problem?</p>
             <p data-aos="fade-up">Kontakta oss på Akuttandvården Stockholm/Novo Dental så hjälper vi dig som är i behov av akut tandvård.</p>
             <p class="mb-5" data-aos="fade-up">
@@ -565,8 +565,7 @@
             </p>
             <p>
               Vi är självklart anslutna till Försäkringskassan vilket innebär att du som patient
-              kan ta del av tandvårdsstödet vid ditt besök hos oss. Vi är även medlemmar i
-              <a href="https://tandlakarforbundet.se/">Sveriges tandläkarförbund</a> och <a href="https://ptl.se/">Privattandläkarna</a>.
+              kan ta del av tandvårdsstödet vid ditt besök hos oss. Vi är även medlemmar i <a href="https://ptl.se/">Privattandläkarna</a>.
             </p>
             <h3 class="mt-5">Kvällar och helger</h3>
             <p>
@@ -600,8 +599,8 @@
             </p>
             <h3 class="mt-5">Boka tid</h3>
             <p class="font-weight-bold">
-              <i class="far fa-envelope fa-fw"></i> Med epost: <span class="badge badge-list my-1" data-aos="fade-in" data-aos-delay="0"><a href="mailto:info@novodental.se">info@novodental.se</a></span><br>
-              <i class="fas fa-phone fa-fw"></i> Med tel: <span class="badge badge-list my-1" data-aos="fade-in" data-aos-delay="100"><a href="tel:08-659 45 00">08-659 45 00</a></span><br>
+              <i class="far fa-envelope fa-fw"></i> Med epost: <span class="d-sm-none"><br></span><span class="badge badge-list my-1"><a href="mailto:info@novodental.se">info@novodental.se</a></span><br>
+              <i class="fas fa-phone fa-fw"></i> Med tel:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="d-sm-none"><br></span><span class="badge badge-list my-1"><a href="tel:08-659 45 00">08-659 45 00</a></span><br>
             </p>
             <p>
               <button class="btn btn-primary" id="OpenChat"><i class="fas fa-globe fa-fw"></i> BOKA ONLINE</button>
@@ -639,7 +638,7 @@
             <div class="input-group-prepend">
               <span class="input-group-text"><i class="far fa-user"></i></span>
             </div>
-            <input type="text" name="Namn" class="form-control" placeholder="Ditt Namn*" required>
+            <input type="text" name="name" class="form-control" placeholder="Ditt Namn*" required>
           </div>
         </div>
         <div class="form-group">
@@ -647,37 +646,83 @@
             <div class="input-group-prepend">
               <span class="input-group-text"><i class="far fa-envelope"></i></span>
             </div>
-            <input type="email" name="Epost" class="form-control" placeholder="Din Epost*" required>
+            <input type="email" name="email" class="form-control" placeholder="Din Epost*" required>
           </div>
         </div>
-        <button class="btn btn-primary" id="chatsubmit">BOKA NU</button>
+        <button class="btn btn-primary" id="chatsubmit"><i class="fas fa-calendar-alt"></i> BOKA NU</button>
       </form>
       <p class="pt-5">Akuttandvården Stockholm i samarbete med:</p>
       <a href="http://novodental.se/"><img src="img/novo.png" class="img-fluid" style="max-height: 20px;"/></a>
     </div>
   </div>
 
+  <div class="modal fade" id="success">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-2 mb-3 text-center text-sm-right">
+                <i class="far fa-check-circle display-4 text-dark"></i>
+              </div>
+              <div class="col-sm-10">
+                <h5 class="my-2">Tid bokad!</h5>
+                <p>
+                  Vi kommer kontakta er via mail angående tider. Tack för att du har bokat tid hos Akuttandvården Stockholm.
+                </p>
+                <div class="text-right">
+                  <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="far fa-times-circle"></i> STÄNG</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="fail">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-2 mb-3 text-center text-sm-right">
+                <i class="far fa-times-circle display-4 text-dark"></i>
+              </div>
+              <div class="col-sm-10">
+                <h5 class="my-2">Något gick fel!</h5>
+                <p>
+                  Något fel inträffade, var vänlig och försök igen om ett tag.
+                </p>
+                <div class="text-right">
+                  <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="far fa-times-circle"></i> STÄNG</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <footer id="Footer" class="pt-5 pb-3">
     <div class="container">
       <div class="row justify-content-center">
-        <div class="col-lg-4 text-center my-3">
+        <div class="col-md-6 text-center my-3">
           <h5>Akuttandvården Stockholm <b>i samarbete med</b> <a href="http://novodental.se/">Novo Dental</a></h5>
           <div class="container">
             <div class="row">
-              <div class="col-sm-6 col-lg-12 my-auto">
+              <div class="col-sm-6 col-md-12 my-auto">
                 <img src="img/logo.png" class="img-fluid cutout my-3" style="max-height: 70px;"/>
               </div>
-              <div class="col-sm-6 col-lg-12 my-auto">
+              <div class="col-sm-6 col-md-12 my-auto">
                 <img src="img/novo.png" class="img-fluid cutout my-3" style="max-height: 30px;"/>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-lg-4 text-center my-3">
-          <img src="img/logo-tdlfb.png" class="img-fluid cutout my-3" style="max-height: 130px;"/>
-          <p>Akuttandvården Stockholm är medlem i <a href="https://tandlakarforbundet.se/">Sveriges tandläkarförbund</a></p>
-        </div>
-        <div class="col-md-6 col-lg-4 my-3">
+        <div class="col-md-6 my-3">
           <h5 class="text-center"><i class="far fa-address-card fw-icon"></i>Kontakt</h5>
           <table class="table font-weight-bold mx-auto" >
             <tbody>
