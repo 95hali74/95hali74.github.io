@@ -3,7 +3,7 @@
 }
 
 a.link {
-    color: brown;
+    color: rgba(220, 94, 58,1);
     transition: color .2s;
 }
 a {
@@ -48,8 +48,8 @@ a {
 }
 
 .btn-primary {
-    background-color: saddlebrown;
-    border-color: saddlebrown;
+    background-color: rgba(220, 94, 58,1);
+    border-color: rgba(220, 94, 58,1);
 }
 
 .btn-primary:hover {
@@ -71,19 +71,27 @@ a {
 }
 
 .navbarbgcolor {
-    background-color: saddlebrown!important;
+    background-color: rgba(240, 114, 78,1)!important;
 }
 
 .navbar {
     transition: background-color 0.6s;
     box-shadow: 0 0 0px rgba(33,33,33,.4);
     text-shadow: 2px 2px 5px rgba(33,33,33,.5);
-    background-color: rgba(2,2,2,0.9);
+    background-color: rgba(2,2,2,0);
     font-size: 24px;
+    height: 85px;
+
 }
 
 .navbar-brand {
-    font-size: 50px !important; 
+    font-size: 25px !important; 
+}
+
+@media(min-width:700px){
+    .navbar-brand {
+        font-size: 55px !important; 
+    }
 }
 
 .navbar-brand .active {
@@ -150,8 +158,8 @@ a {
 
 .chat-expand {
     border-radius: 1%;
-    width: 300px;
-    height: 300px;
+    width: 270px;
+    height: 350px;
     background-color: white;
 }
 
@@ -160,7 +168,7 @@ a {
     height: 80px;
     color: white;
     border-radius: 100%;
-    background-color: saddlebrown;
+    background-color: rgba(220, 94, 58,1);
 }
 
 .chat-content {
@@ -253,23 +261,8 @@ a {
     z-index: -100;
 }
 
-@media(min-width:700px){
 .maintext {
     color: white;
-    padding-bottom: 30vh;
-}
-
-.slider {
-    padding-top:40vh;
-}
-}
-
-.maintext {
-    color: white;
-}
-
-.slider {
-
 }
 
 .pslider {
