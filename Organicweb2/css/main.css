@@ -213,6 +213,8 @@ a {
     font-size: 30px;
 }
 
+@media(max-width:700px){
 .navbar-collapse {
     background-color:rgba(240, 114, 78,1);
 }
+    }
