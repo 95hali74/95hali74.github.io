@@ -103,7 +103,7 @@ $("#chatform").submit(function(e) {
 $(document).ready(function(){
   $(window).scroll(function(){
   	var scroll = $(window).scrollTop();
-	  if (scroll > $(window).height()) {
+	  if (scroll > $(window).height()-100) {
 	    $(".navbar").addClass("navbarbgcolor");
 	  }
 

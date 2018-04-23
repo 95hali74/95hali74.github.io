@@ -3,7 +3,7 @@
 }
 
 a.link {
-    color: brown;
+    color: rgba(220, 94, 58,1);
     transition: color .2s;
 }
 a {
@@ -48,8 +48,8 @@ a {
 }
 
 .btn-primary {
-    background-color: saddlebrown;
-    border-color: saddlebrown;
+    background-color: rgba(220, 94, 58,1);
+    border-color: rgba(220, 94, 58,1);
 }
 
 .btn-primary:hover {
@@ -71,19 +71,37 @@ a {
 }
 
 .navbarbgcolor {
-    background-color: saddlebrown!important;
+    background-color: rgba(240, 114, 78,1)!important;
 }
 
 .navbar {
     transition: background-color 0.6s;
     box-shadow: 0 0 0px rgba(33,33,33,.4);
     text-shadow: 2px 2px 5px rgba(33,33,33,.5);
-    background-color: rgba(2,2,2,0.9);
+    background-color: rgba(240, 114, 78,1);
     font-size: 24px;
+    height: 85px;
 }
 
+@media(min-width:700px){
+.navbar {
+    transition: background-color 0.6s;
+    box-shadow: 0 0 0px rgba(33,33,33,.4);
+    text-shadow: 2px 2px 5px rgba(33,33,33,.5);
+    background-color: transparent;
+    font-size: 24px;
+    height: 85px;
+}
+    }
+
 .navbar-brand {
-    font-size: 50px !important; 
+    font-size: 25px !important; 
+}
+
+@media(min-width:700px){
+    .navbar-brand {
+        font-size: 55px !important; 
+    }
 }
 
 .navbar-brand .active {
@@ -150,8 +168,8 @@ a {
 
 .chat-expand {
     border-radius: 1%;
-    width: 300px;
-    height: 300px;
+    width: 270px;
+    height: 350px;
     background-color: white;
 }
 
@@ -160,7 +178,7 @@ a {
     height: 80px;
     color: white;
     border-radius: 100%;
-    background-color: saddlebrown;
+    background-color: rgba(220, 94, 58,1);
 }
 
 .chat-content {
@@ -177,73 +195,6 @@ a {
     }
 }
 
-.particle-network-animation {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 100vh;
-    z-index: -1;
-    background-image: linear-gradient(to left top, #005c97, #0083b3, #00a8b4, #00c99f, #90e581);
-}
-
-.glow {
-    z-index: -1;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    background-image: radial-gradient(circle closest-side, rgba(255, 255, 255, 0.025), transparent);
-}
-
-.glow-1 {
-    width: 150vw;
-    height: 150vh;
-    margin-top: -75vh;
-    margin-left: -75vw;
-    animation: glow-1-move 25s linear infinite both;
-}
-
-@keyframes glow-1-move {
-    from {
-        transform: translate(-100%, 100%);
-    }
-    to {
-        transform: translate(100%, -100%);
-    }
-}
-.glow-2 {
-    width: 100vw;
-    height: 100vh;
-    margin-top: -50vh;
-    margin-left: -50vw;
-    animation: glow-2-move 25s linear 8.3333333333s infinite both;
-}
-
-@keyframes glow-2-move {
-    from {
-        transform: translate(-100%, 0%);
-    }
-    to {
-        transform: translate(100%, 100%);
-    }
-}
-.glow-3 {
-    width: 120vw;
-    height: 120vh;
-    margin-top: -60vh;
-    margin-left: -60vw;
-    animation: glow-3-move 25s linear 16.6666666667s infinite both;
-}
-
-@keyframes glow-3-move {
-    from {
-        transform: translate(100%, 100%);
-    }
-    to {
-        transform: translate(0%, -100%);
-    }
-}
-
 #myVideo {
     position: fixed;
     right: 0;
@@ -253,26 +204,17 @@ a {
     z-index: -100;
 }
 
-@media(min-width:700px){
 .maintext {
     color: white;
-    padding-bottom: 30vh;
-}
-
-.slider {
-    padding-top:40vh;
-}
-}
-
-.maintext {
-    color: white;
-}
-
-.slider {
-
 }
 
 .pslider {
     color: white;
     font-size: 30px;
 }
+
+@media(max-width:700px){
+.navbar-collapse {
+    background-color:rgba(240, 114, 78,1);
+}
+    }
