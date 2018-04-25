@@ -1,0 +1,210 @@
+
+<!doctype html>
+<html lang="sv">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <title>En Renare Vardag</title>
+        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Wire+One" />
+        <link href='https://fonts.googleapis.com/css?family=Bree Serif' rel='stylesheet'>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <section>
+            <div class="row justify-content-lg-center">
+                <div class="col-lg-2 my-auto">
+                    <img src="img/logo.jpeg">
+                </div>
+                <div class="col-lg-2 my-auto text-center">
+                    <h1 class="tel">Tel: 08-660 55 55</h1>
+                </div>
+                <div class="col-lg-3 my-auto text-center">
+                    <h1 class="name">Flyttstädning i Enskede</h1>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="row justify-content-lg-center mb-3">
+                <div class="col-lg-3">
+                </div>
+                <div class="col-lg-3">
+                    <nav class="navbar navbar-expand-lg navbar-light float-right">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarText">
+                            <ul class="navbar-nav float-right">
+                                <li class="nav-item item">
+                                    <a class="nav-link" href="index.html">HEM <span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item active item">
+                                    <a class="nav-link" href="priser.html">PRISER</a>
+                                </li>
+                                <li class="nav-item last">
+                                    <a class="nav-link" href="kontakt.html">KONTAKT</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </section>
+        <section class="prisersec text-center d-flex">
+            <div class="container my-auto text-white">
+                <div class="row my-5">
+                    <div class="col-lg-8 mx-auto">
+                        <h1 class="priser">
+                            PRISER
+                        </h1>
+
+                    </div>
+                    <div class="col-lg-8 mx-auto">
+                        <h1 class="prisertwo">Boka enkelt online och få svar omgående.</h1>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="stadkostnad my-5">
+            <div class="container">
+                <div id="my_price_form">
+                    <div class="find-price">
+                        <div class="my-price-pre-text">
+                            <h2>Räkna ut din städkostnad</h2>
+                            <p>Ange antal rum exkl. kök och hur stor bostaden är i kvm</p>
+                        </div>
+                        <div id="my_price_form">
+                            <div class="rok">
+                                <label for="rok">Antal rum</label>
+                                <input type="text" id="rok" name="rok" value="">
+                            </div>
+                            <div class="kvm">
+                                <label for="kvm">Antal kvm</label>
+                                <input type="text" id="kvm" name="kvm" value="">
+                            </div>
+                            <input type="submit" id="calculate_price" class="btn btn-primary" value="SE DITT PRIS">
+                        </div>
+                    </div>
+                </div>
+                <div id="show_price">
+
+                    <div id="close" onclick="$('#show_price').hide();">stäng x</div>
+
+                    <table class="paket-wrapper">
+                        <tbody>
+                            <tr>
+                                <td class="border" colspan="6"></td>
+                            </tr>
+                            <tr>
+                                <td class="raknareIkon hidden-xs"><img src="https://enrenarevardag.se/wp-content/themes/topborn/library/images/stadikon/1.png" alt="Kostnad"></td>
+                                <td class="raknareTitel"><h5>Städning per månad<span class="asterisk">*</span></h5></td>
+                                <td><span id="pris_s" data-number="1" class="price"> kr</span></td>
+                                <td class="raknareLasmer hidden-xs"><a href="https://enrenarevardag.se/privat/hemstadning/" class="las-mer">Läs mer »</a></td>
+                                <td class="raknareEller hidden-xs">eller</td>
+                                <td><a class="intresse-btn-small hidden-xs" data-toggle="modal" data-target="#offert-modal">Offert</a></td>
+                            </tr>
+                            <tr>
+                                <td class="border" colspan="6"></td>
+                            </tr>
+                            <tr>
+                                <td class="raknareIkon hidden-xs"><img src="https://enrenarevardag.se/wp-content/themes/topborn/library/images/stadikon/2.png" alt="Kostnad"></td>
+                                <td class="raknareTitel"><h5>Städning varannan vecka<span class="asterisk">*</span></h5></td>
+                                <td><span id="pris_m" data-number="2" class="price">:-</span></td>
+                                <td class="raknareLasmer hidden-xs"><a href="https://enrenarevardag.se/privat/hemstadning/" class="las-mer">Läs mer »</a></td>
+                                <td class="raknareEller hidden-xs">eller</td>
+                                <td><a class="intresse-btn-small hidden-xs" data-toggle="modal" data-target="#offert-modal">Offert</a></td>
+                            </tr>
+                            <tr>
+                                <td class="border" colspan="6"></td>
+                            </tr>
+                            <tr>
+                                <td class="raknareIkon hidden-xs"><img src="https://enrenarevardag.se/wp-content/themes/topborn/library/images/stadikon/3.png" alt="Kostnad"></td>
+                                <td class="raknareTitel"><h5>Städning varje vecka<span class="asterisk">*</span></h5></td>
+                                <td><span id="pris_l" data-number="4" class="price">:-</span></td>
+                                <td class="raknareLasmer hidden-xs"><a href="https://enrenarevardag.se/privat/hemstadning/" class="las-mer">Läs mer »</a></td>
+                                <td class="raknareEller hidden-xs">eller</td>
+                                <td><a class="intresse-btn-small hidden-xs" data-toggle="modal" data-target="#offert-modal">Offert</a></td>
+                            </tr>
+                            <tr>
+                                <td class="border" colspan="6"></td>
+                            </tr>
+                            <tr>
+                                <td class="raknareIkon hidden-xs"><img src="https://enrenarevardag.se/wp-content/themes/topborn/library/images/stadikon/4.png" alt="Kostnad"></td>
+                                <td class="raknareTitel"><h5>Fönsterputsning<span class="asterisk">**</span></h5></td>
+                                <td><span id="fonsterputs" data-number="okno" class="price">:-</span></td>
+                                <td class="raknareLasmer hidden-xs"><a href="https://enrenarevardag.se/privat/fonsterputs/" class="las-mer">Läs mer »</a></td>
+                                <td class="raknareEller hidden-xs">eller</td>
+                                <td><a class="intresse-btn-small hidden-xs" data-toggle="modal" data-target="#offert-modal">Offert</a></td>
+                            </tr>
+                            <tr>
+                                <td class="border" colspan="6"></td>
+                            </tr>
+                            <tr>
+                                <td class="raknareIkon hidden-xs"><img style="height: 38px;" src="https://enrenarevardag.se/wp-content/themes/topborn/library/images/stadikon/5.png" alt="Kostnad"></td>
+                                <td class="raknareTitel"><h5>Storstädning<span class="asterisk">***</span></h5></td>
+                                <td><span id="flyttstadning" data-number="8" class="price">:-</span></td>
+                                <td class="raknareLasmer hidden-xs"><a href="https://enrenarevardag.se/privat/storstadning/" class="las-mer">Läs mer »</a></td>
+                                <td class="raknareEller hidden-xs">eller</td>
+                                <td><a class="intresse-btn-small hidden-xs" data-toggle="modal" data-target="#offert-modal">Offert</a></td>
+                            </tr>
+
+                            <tr>
+                                <td class="border" colspan="6"></td>
+                            </tr>
+                            <tr>
+                                <td class="raknareIkon hidden-xs"><img src="https://enrenarevardag.se/wp-content/themes/topborn/library/images/stadikon/6.png" alt="Kostnad"></td>
+                                <td class="raknareTitel"><h5>Flyttstädning<span class="asterisk">***</span></h5></td>
+                                <td><span id="flyttstadning" data-number="7" class="price">:-</span></td>
+                                <td class="raknareLasmer hidden-xs"><a href="https://enrenarevardag.se/privat/flyttstadning/" class="las-mer">Läs mer »</a></td>
+                                <td class="raknareEller hidden-xs">eller</td>
+                                <td><a class="intresse-btn-small hidden-xs" data-toggle="modal" data-target="#offert-modal">Offert</a></td>
+                            </tr>
+                            <tr>
+                                <td class="border" colspan="6"></td>
+                            </tr>
+
+                            <tr>
+                                <td colspan="6" class="disclaimer">
+                                    *Priset är endast uppskattat. Du får ett exakt pris efter vi genomför ett kostnadsfritt hembesök där vi skräddarsyr efter dina behov
+                                    och önskemål.<br>
+                                    **Priserna gäller fyr-sidiga fönster utan spröjs. För övriga fönster,
+                                    ring eller maila för offert.<br>
+                                    ***För priser över 200 kvm ring eller maila för offert.
+                                    Priset är efter skatteavdraget på 50% som vi gör åt dig direkt på fakturan.
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+        <section class="bg-white">
+            <footer>
+                <ul class="nav navbar-light py-5 bg-light footer">
+                    <li class="nav-item mx-auto">
+                        <p class="nav-link my-auto"><i class="far fa-copyright"></i> Copyright <span id="current-year"></span>2015</p>
+                    </li>
+                </ul>
+            </footer>
+        </section>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+        <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

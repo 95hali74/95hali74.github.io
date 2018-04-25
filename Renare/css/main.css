@@ -1,0 +1,234 @@
+ul {
+    padding-left: 20px!important;
+}
+
+hr {
+    border-width: 2.5px;
+    border-color: rgba(0,0,0,0.4);
+}
+
+h2 {
+    font-size:18px;
+}
+
+p {
+    font-family: "Open Sans";
+    margin-bottom: 2px;
+}
+
+.desc {
+    color: #bfdeaf;
+}
+
+.bebas {
+    font-family:'Bebas Neue';
+    font-weight:bold;
+}
+
+.wireone {
+    font-family: "Wire One";
+    font-size: 24px;
+}
+
+.erbjud {
+    color: rgba(0,0,0,0.7);
+}
+
+.judgetxt {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.judgenbr {
+    font-size: 50px;
+}
+
+.navbar {
+    background-color: white!important;
+}
+
+.item { 
+    border-right: 1px solid grey;
+}
+
+.last {
+    border-right: none
+}
+
+.nav-link {
+    padding: 0px;
+}
+
+.name{
+    font-family: 'Bree Serif'!important;
+    color: #315c3f;
+    font-size: 26px;
+}
+
+.tel {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color: #315c3f;
+    font-size: 26px;
+}
+
+.nav-link {
+    color: black;
+}
+
+.active a{
+    color: #ff5e00 !important;
+}
+
+.nav-link {
+    color: black!important;
+}
+
+.main {
+    background-image: url(https://d25lcx2ne1mt2n.cloudfront.net/260411/25750727-fvDvV.jpg);
+    height:100%;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.3);
+    background-position: center center;
+    background-attachment: scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+.offers {
+    background-image: url(https://d25lcx2ne1mt2n.cloudfront.net/260411/25753855-IMTMK.jpg);
+    box-shadow: inset 0 0 0 1000px rgba(255,255,255,0.5);
+    background-position: center center;
+    background-attachment:scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+.mapsec {
+    height: 55vh;
+    background-image: url(https://d25lcx2ne1mt2n.cloudfront.net/260411/25753526-WhRuW.png);
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.7);
+    background-position: center center;
+    background-attachment: scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+.prisersec {
+    height: 50vh;
+    background-image: url(https://d25lcx2ne1mt2n.cloudfront.net/260411/25753999-75sEc.jpg);
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.7);
+    background-position: center center;
+    background-attachment: scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+.btn-primary {
+    font-family: "Open Sans"; 
+    color: white!important;
+    background-color: #ff5e00;
+    border-color: #ff5e00;
+}
+
+.btn-primary:hover {
+    color: white;
+    background-color: #ff7e00;
+    border-color: #ff7e00;
+}
+
+.arrow {
+    height: 35px;
+}
+
+.orange {
+    color: #ff5e00;
+}
+
+.judgetop {
+    padding-top: 15vh;
+}
+
+.judgebot {
+    padding-bottom: 5vh;
+}
+
+.footer {
+    box-shadow: 0 10px 20px -10px rgba(33,33,33,.2);
+}
+
+@font-face {
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Bebas Neue'), url('BebasNeue.woff') format('woff');
+}
+
+.bubble 
+{
+    position: relative;
+    padding: 0px;
+    background: #FFFFFF;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    border: #7F7F7F solid 2px;
+}
+
+.bubble:after 
+{
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-width: 25px 10px 0;
+    border-color: #FFFFFF transparent;
+    display: block;
+    width: 0;
+    z-index: 1;
+    bottom: -25px;
+    left: 59px;
+}
+
+.bubble:before 
+{
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-width: 26px 11px 0;
+    border-color: #7F7F7F transparent;
+    display: block;
+    width: 0;
+    z-index: 0;
+    bottom: -28px;
+    left: 58px;
+}
+
+.cleaner {
+    padding-top: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 10px;
+    width: 100%;
+}
+
+.imgtxt {
+    padding-left: 15px;
+    font-size: 18px;
+    padding-bottom: 10px;
+}
+
+.priser {
+    color: #bfdeaf;
+}
+
+.prisertwo {
+    font-size: 24px;
+}
+
+#map {
+    padding-top: 15px;
+    height: 300px;
+    width: 250px;
+}

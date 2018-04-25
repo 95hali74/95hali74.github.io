@@ -1,0 +1,111 @@
+.hidden,
+#header,#head,
+.h24_footer,#footer,
+.h24_bg_image,
+#h24_webshop,#h24_order_popup,
+.h24_do_not_print,
+.alert_message,
+#h24_jq_tools_gallery,#facebox,#shadowbox_container,
+#top-menu-wrapper,#leftside,.sf-menu,#h24_simple_top_menu,#menu,
+#h24_controlPanel, #admin_panel, #add_content_panel, #ap_subMenuHolder,
+.editing_control_panel, .settings, .h24_minidropdown, .dialog_save_cancel_buttons,
+#h24_quickstart, #terms, #purchase_dialog, #h24_purchase_manager, .h24_dialog,
+#sortable_helper, .simplebit_tab, #h24_picnik_container, .visibility_hidden,
+.pp-FauxSection, .responsive_container
+{
+	display:none !important;
+}
+
+/* Non-supported blocks */
+.h24_galleria_block {
+	display: none !important;
+}
+
+/* Make content wide */
+.h24_heading span,
+.h24_content_container {
+	width: 95% !important;
+}
+
+.h24_collection {
+	float: left;
+	padding: 10px;
+	margin-bottom: 20px;
+	max-width: 100% !important;
+	width: auto !important;
+}
+
+.h24_collection_newline {
+	clear: both;
+}
+
+.block_container {
+	margin: 0 10px 10px 0;
+}
+
+.h24_block_rss_block .mobile_fluid_width {
+	width: 95% !important;
+}
+
+.h24_content_container img {
+	max-width: 100% !important;
+}
+
+/* Reset block height */
+.block_container {
+	min-height: auto !important;
+}
+
+.sortable {
+	list-style-type: none;
+}
+
+body, .h24_design { 
+	background-color: #ffffff !important;;
+	background-image: none !important;
+	font-family: Georgia, Times, serif !important;
+	font-size: 11pt;
+	/*line-height: 1.2;*/
+	color: #000000 !important;
+}
+
+img {
+	border: 0;
+}
+
+p, span, td, th, h1,h2,h3,h4,h5,em,b,strong { 
+	color: #000000 !important;
+}
+
+p {
+	margin: 0;
+}
+
+li {background-image:none !important;}
+
+a:link, a:visited {
+	color: #0059BF;
+	background: transparent;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+/* Clearing */
+.clearer { clear: both; }
+
+
+/* Simple gallery */
+div.simple_gallery_content > div {
+float:left;
+position:relative;
+}
+div.simple_gallery_content  {
+clear:both;
+overflow:hidden;
+width:100%;
+}
+
+/* Google maps */
+div.h24_do_print {
+display:block;
+}
