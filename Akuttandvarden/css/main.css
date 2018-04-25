@@ -174,7 +174,7 @@ table th, table td {
 
 #logos::after {
   content: "";
-  background-image: url("../img/bg-hero3.jpg");
+  background-image: url("../img/bg-hero.jpg");
   background-size: cover;
   background-position: center;
   opacity: 0.5;
