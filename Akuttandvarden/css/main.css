@@ -234,6 +234,11 @@ table th, table td {
     width: 65px;
     height: 65px;
   }
+
+  .chat-expand {
+    width: 300px;
+    height: 400px;
+  }
   .chat-icon {
     font-size: 1.5rem;
   }
