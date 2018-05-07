@@ -20,6 +20,10 @@ p {
     margin-bottom: 2px;
 }
 
+.logo {
+    height: 115px;
+}
+
 .desc {
     color: #bfdeaf;
 }
@@ -85,7 +89,8 @@ p {
 .tel {
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     color: #315c3f;
-    font-size: 26px;
+    font-size: 20px;
+    padding-top: 12px;
 }
 
 .active a{
