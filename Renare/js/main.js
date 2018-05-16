@@ -2,12 +2,12 @@ $("#calculate_price").click(function(){
     var rooms = $("#rok").val();
     var kvm = $("#kvm").val();
 
-    var s;
-    var m;
-    var l;
+    var s = 0;
+    var m = 0;
+    var l = 0;
     var fonsterputs = 540;
-    var storstadning;
-    var flyttstadning;
+    var storstadning = 0;
+    var flyttstadning = 0;
     var calc = rooms - 2;
 
     s = 460 + (rooms - 1) * 115;
